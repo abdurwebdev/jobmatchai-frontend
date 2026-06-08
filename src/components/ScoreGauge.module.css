@@ -1,25 +1,58 @@
-.wrap { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
-.gaugeWrap { position: relative; width: 140px; height: 140px; }
-.scoreInner { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
-.scoreNum { font-family: 'Cabinet Grotesk', sans-serif; font-size: 2.2rem; font-weight: 800; }
-/* ... keep your layout styles (.wrap, .gaugeWrap, .scoreInner, .scoreNum) the same ... */
+.wrap { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.gaugeWrap { 
+  position: relative; 
+  width: 140px; 
+  height: 140px; 
+}
+
+.scoreInner { 
+  position: absolute; 
+  inset: 0; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.scoreNum { 
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+  font-size: 2.5rem; 
+  font-weight: 700; 
+  color: #111111;
+  letter-spacing: -1px;
+  line-height: 1;
+}
 
 .scorePct { 
-  font-size: 0.75rem; 
-  color: #666666; /* Changed from var(--text-muted) to a visible charcoal */
+  font-size: 0.8rem; 
+  color: #888888; 
   font-weight: 500;
+  margin-top: 2px;
 }
 
 .label { 
-  font-family: 'Cabinet Grotesk', sans-serif; 
-  font-weight: 700; 
-  font-size: 1.1rem; 
-  color: #111111; /* Explicit dark color */
+  font-family: "Georgia", serif; 
+  font-style: italic;
+  font-weight: 400; 
+  font-size: 1.5rem; 
+  color: #111111;
+  margin: 0;
 }
 
 .summary { 
-  font-size: 0.78rem; 
-  color: #555555; /* Changed from var(--text-muted) to dark gray */
-  font-weight: 500;
-  margin-top: 0.2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+  font-size: 0.8rem; 
+  color: #666666; 
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
 }

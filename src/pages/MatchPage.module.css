@@ -247,34 +247,44 @@
   min-height: 0;
 }
 
-/* Component Placement Card Wrapper Classes */
+/* Update these inside your MatchPage.module.css */
 .cardGauge {
-  grid-row: span 2;
   background: #ffffff;
-  border-radius: 20px;
+  border-radius: 24px;
   border: 1px solid rgba(0,0,0,0.04);
-  padding: 2rem;
+  padding: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.02);
 }
 
-.cardSuggestions, .cardSkills {
+.cardSuggestions {
   background: #ffffff;
-  border-radius: 20px;
+  border-radius: 24px;
   border: 1px solid rgba(0,0,0,0.04);
-  padding: 1.5rem;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.02);
-  overflow-y: auto; /* Allow safe interior scroll inside component cards */
-  scrollbar-width: none; /* Hide interior track bars for Firefox */
+  padding: 2.5rem;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.02);
+  overflow-y: auto;
+  scrollbar-width: none;
 }
 
-.cardSuggestions::-webkit-scrollbar, 
+.cardSkills {
+  grid-column: span 2; /* Spans across the bottom beautifully */
+  background: #ffffff;
+  border-radius: 24px;
+  border: 1px solid rgba(0,0,0,0.04);
+  padding: 2.5rem;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.02);
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+/* Hide webkit scrolls */
+.cardSuggestions::-webkit-scrollbar,
 .cardSkills::-webkit-scrollbar {
-  display: none; /* Hide interior track bars for Chrome/Safari */
+  display: none;
 }
-
 /* Miscellaneous Helpers */
 .errorMsg {
   color: #ef4444;
