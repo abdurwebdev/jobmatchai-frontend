@@ -1,0 +1,5 @@
+.wrap { display: flex; flex-direction: column; gap: 1.2rem; }
+.section {}
+.title { font-size: 0.9rem; font-weight: 700; margin-bottom: 0.7rem; }
+.tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.tag { font-size: 0.8rem; padding: 0.3rem 0.75rem; border-radius: 20px; font-weight: 500; }

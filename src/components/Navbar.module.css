@@ -1,0 +1,115 @@
+.headerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+/* Left Brand Design Elements */
+.logoGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.avatarIcon {
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  border-radius: 14px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brandIconAnim {
+  color: #111111;
+  animation: float 4s ease-in-out infinite;
+}
+
+.brandName {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: -0.3px;
+  color: #111111;
+}
+
+/* Middle Informational Layout */
+.metaStatus {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.85rem;
+  color: #555555;
+}
+
+.pulseIcon {
+  color: #888888;
+  animation: spinSlow 12s linear infinite;
+}
+
+.statusDot {
+  color: #555555;
+  font-size: 0.6rem;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+/* Right Floating Control Pill */
+.pillNav {
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  padding: 0.4rem;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.activePill {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.4rem 1rem;
+  background: #111111;
+  color: #ffffff;
+  border-radius: 20px;
+}
+
+.techBadge {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.82rem;
+  color: #555555;
+  padding-right: 0.8rem;
+  padding-left: 0.4rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Smooth Micro-Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-2px) rotate(5deg); }
+}
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse { 
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+/* UI Responsiveness Breakpoint */
+@media (max-width: 640px) {
+  .metaStatus {
+    display: none; /* Safely drops mid-section items for clean mobile presentation */
+  }
+}

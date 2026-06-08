@@ -1,0 +1,7 @@
+.wrap { display: flex; flex-direction: column; gap: 1.2rem; }
+.summary { background: rgba(99,102,241,0.1); border: 1px solid rgba(99,102,241,0.25); border-radius: 12px; padding: 1rem 1.2rem; }
+.summaryText { font-size: 0.9rem; line-height: 1.6; color: var(--text); }
+.title { font-size: 0.9rem; font-weight: 700; color: #a78bfa; }
+.list { display: flex; flex-direction: column; gap: 0.8rem; }
+.item { display: flex; gap: 1rem; align-items: flex-start; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 0.9rem 1rem; }
+.num { font-family: 'Cabinet Grotesk', sans-serif; font-weight: 800; font-size: 1.1rem; background: var(--grad-brand); -webkit-background-clip: text; -webkit-text-fill-color: transparent; min-width: 24px; }
