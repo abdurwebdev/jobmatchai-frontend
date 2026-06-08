@@ -2,6 +2,24 @@
 .gaugeWrap { position: relative; width: 140px; height: 140px; }
 .scoreInner { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
 .scoreNum { font-family: 'Cabinet Grotesk', sans-serif; font-size: 2.2rem; font-weight: 800; }
-.scorePct { font-size: 0.75rem; color: var(--text-muted); }
-.label { font-family: 'Cabinet Grotesk', sans-serif; font-weight: 700; font-size: 1.1rem; }
-.summary { font-size: 0.78rem; color: var(--text-muted); }
+/* ... keep your layout styles (.wrap, .gaugeWrap, .scoreInner, .scoreNum) the same ... */
+
+.scorePct { 
+  font-size: 0.75rem; 
+  color: #666666; /* Changed from var(--text-muted) to a visible charcoal */
+  font-weight: 500;
+}
+
+.label { 
+  font-family: 'Cabinet Grotesk', sans-serif; 
+  font-weight: 700; 
+  font-size: 1.1rem; 
+  color: #111111; /* Explicit dark color */
+}
+
+.summary { 
+  font-size: 0.78rem; 
+  color: #555555; /* Changed from var(--text-muted) to dark gray */
+  font-weight: 500;
+  margin-top: 0.2rem;
+}

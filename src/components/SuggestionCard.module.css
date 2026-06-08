@@ -1,6 +1,19 @@
 .wrap { display: flex; flex-direction: column; gap: 1.2rem; }
-.summary { background: rgba(99,102,241,0.1); border: 1px solid rgba(99,102,241,0.25); border-radius: 12px; padding: 1rem 1.2rem; }
-.summaryText { font-size: 0.9rem; line-height: 1.6; color: var(--text); }
+/* ... keep your layout styles (.wrap, .title, .list, .item, .num) the same ... */
+
+.summary { 
+  background: rgba(99, 102, 241, 0.08); 
+  border: 1px solid rgba(99, 102, 241, 0.2); 
+  border-radius: 12px; 
+  padding: 1rem 1.2rem; 
+}
+
+.summaryText { 
+  font-size: 0.9rem; 
+  line-height: 1.6; 
+  color: #2d3748; /* Changed from var(--text) to deep dark slate for clean reading */
+  font-weight: 500;
+}
 .title { font-size: 0.9rem; font-weight: 700; color: #a78bfa; }
 .list { display: flex; flex-direction: column; gap: 0.8rem; }
 .item { display: flex; gap: 1rem; align-items: flex-start; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 0.9rem 1rem; }
